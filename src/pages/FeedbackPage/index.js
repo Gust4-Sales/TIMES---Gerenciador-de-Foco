@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { StyleSheet, View, Text, BackHandler, } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome5'
 import FeedbackResult from '../../components/FeedbackResult'
+import { CommonActions } from '@react-navigation/native'
 import { calculateTimeOut, calculateFocus, getTimeOutStringFormatted } from '../../negocio/FeedbackManager'
 
 
@@ -18,7 +19,7 @@ export default function FeedbackPage({ route, navigation }){
             fontSize: 30,
         },
 
-        headerLeft: () => <Icon name="arrow-left" onPress={() => navigation.navigate("FormPage")} color="#eee" size={25} 
+        headerLeft: () => <Icon name="arrow-left" onPress={handler} color="#eee" size={25} 
             style={{marginLeft: 15, paddingVertical: 10, paddingHorizontal: 15}}/>
     })
 
@@ -33,16 +34,26 @@ export default function FeedbackPage({ route, navigation }){
     const timeOutFormatted = getTimeOutStringFormatted(tempoDecorrido, tempoTotal)
     
     useEffect(() => {
-        function handler(){
-            navigation.navigate("FormPage")
-            return true
-        }
         BackHandler.addEventListener('hardwareBackPress', handler)
 
         return () => {
             BackHandler.removeEventListener('hardwareBackPress', handler)
         }
     }, [])
+
+    function handler(){
+        navigation.dispatch(
+            CommonActions.reset({
+              index: 1,
+              routes: [
+                { name: 'HomePage' },
+                { name: 'FormPage' }
+              ],
+            })
+        )
+        
+        return true
+    }
 
     return(
         <View style={styles.container}>

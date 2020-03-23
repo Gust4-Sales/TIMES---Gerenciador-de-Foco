@@ -8,6 +8,7 @@ import TimeBox from '../../components/TimeBox'
 import BreakIconsContainer from '../../components/BreakIconsContainer'
 import BreakContainer from '../../components/BreakContainer'
 import { scheduleBreakStartNotification, cancellAllNotifications, scheduleCicleFinishedNotification } from '../../Notification.config'
+import { CommonActions } from '@react-navigation/native'
 import moment from 'moment'
 import styles from './styles'
 
@@ -24,7 +25,7 @@ export default function RunningCiclePage({ route, navigation }){
 
     let { tempoTotal, tempoDeAtividade, temporizador, quantidadeDeIntervalos, tempoDeIntervalo, } = route.params
     temporizador = temporizador*60 //segundos
-    // temporizador = 2
+    // temporizador = 4
     
     function handler () {
         cancellCicle()
@@ -54,14 +55,6 @@ export default function RunningCiclePage({ route, navigation }){
         workTimeStart = moment()
         cicleTimeStart = moment()
 
-        setBreakProgress(0)
-        setFocusValues([])
-        setIntervalosPassados(0)
-        setLastWorkingCicle(false)
-        setModalBreakVisible(false)
-        setModalTitle("Intervalo 1")
-        setPauseActive(false)
-        setTempoDecorrido("0h:0:0")
         setFraseMotivacional(json.frases[Math.floor(Math.random() * json.frases.length)].texto)
 
         navigation.addListener('blur', payload => {
@@ -237,11 +230,20 @@ export default function RunningCiclePage({ route, navigation }){
                 {
                     text: "Sim", onPress: () => {
                         cancellAllNotifications()
-                        navigation.goBack()
+                        setBreakProgress(0)
+                        navigation.dispatch(
+                            CommonActions.reset({
+                              index: 1,
+                              routes: [
+                                { name: 'HomePage' },
+                                { name: 'FormPage' }
+                              ],
+                            })
+                        )
+                    }
                 }
-            }
-        ],
-        {cancelable: true}
+            ],
+            { cancelable: true }
         )
     }
 

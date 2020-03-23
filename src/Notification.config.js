@@ -32,6 +32,8 @@ async function scheduleBreakStartNotification(time){
         importance: "high",
         visibility: "public",
         priority: "high",
+        vibration: 3000,
+        soundName: 'alarm.mp3'
     })
     
 }   
@@ -46,6 +48,8 @@ async function scheduleBreakFinishedNotification(time){
         importance: "high",
         visibility: "public",
         priority: "high",
+        vibration: 3000,
+        soundName: 'alarm.mp3'
     })
 }
 
@@ -59,6 +63,8 @@ async function scheduleCicleFinishedNotification(time){
         importance: "high",
         visibility: "public",
         priority: "high",
+        vibration: 3000,
+        soundName: 'alarm.mp3'
     })
 }
 
