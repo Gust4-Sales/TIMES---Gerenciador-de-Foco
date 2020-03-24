@@ -27,6 +27,6 @@ This app features all the latest tools and practices in mobile development!
 
 ## Instalação
 1. Clone o repositório rodando no seu terminal/cmd ````git clone https://github.com/Gust4-Sales/TIMES-Gerenciador-de-Foco.git ```` 
-2. entre rode na pasta do projeto e rode ```yarn``` para instalar todas as dependências
-3. por fim ```react-native run-android``` para iniciar no seu dispositivo e/ou emulador Android
+2. Entre na pasta do projeto e rode ```yarn``` para instalar todas as dependências
+3. Por fim,  ```react-native run-android``` para iniciar no seu dispositivo e/ou emulador Android
 
