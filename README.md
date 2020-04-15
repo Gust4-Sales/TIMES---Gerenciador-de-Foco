@@ -23,7 +23,7 @@ This app features all the latest tools and practices in mobile development!
 
 - ⚛️ **React** — Uma biblioteca em JavaScript para desenvolvimento de interfaces
 - ⚛️ **React Native** — Uma lib que provê uma maneira de criar apps nativos IOS e Android utilizando React
-- 🕒 **Moment** — Biblioteca em Javascript pra gerenciar tempo.
+- 🕒 **Moment** — Biblioteca em Javascript pra lidar com tempo/datas.
 
 ## Instalação
 1. Clone o repositório rodando no seu terminal/cmd ````git clone https://github.com/Gust4-Sales/TIMES-Gerenciador-de-Foco.git ```` 
