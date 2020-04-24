@@ -6,6 +6,7 @@ TIMES - Gerenciador de Foco
 <p align="center">Gerenciador de foco para ajudar na produtividade utilizando o protocolo TIMES criado por Vitor Santos do canal Metaforando (mais detalhes no video: https://www.youtube.com/watch?v=WzspAsMc06s&)</p>
 <p>Link na PlayStore: https://play.google.com/store/apps/details?id=com.times</p>
 
+Algumas telas do app:
 <div>
   <img src="https://lh3.googleusercontent.com/6aCkMNkI0v5uhb_he7lAs489QTOoc0DmmJMFFVUQN-cwdpsPwCTdO-WZRzAh40IpfUyX=w1920-h937-rw" alt="logo" height="425">
   <img src="https://lh3.googleusercontent.com/oWPwexI51IOko3Hr6PXVgD4q2V3aapEul5CIjebM4A6LNVmTwci8ME_nNxT_XWZlhac=w1920-h937-rw" alt="Homepage" height="425">
