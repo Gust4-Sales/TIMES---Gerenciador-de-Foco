@@ -3,7 +3,7 @@
 TIMES - Gerenciador de Foco
 </h1>
 
-<p align="center">Gerenciador de foco para ajudar na produtividade utilizando o protocolo TIMES criado por Vitor Santos do canal Metaforando (mais detalhes no video: https://www.youtube.com/watch?v=WzspAsMc06s&)</p>
+<p align="center">Gerenciador de foco para ajudar na produtividade utilizando o protocolo TIMES criado por Vitor Santos do canal Metaforando (mais detalhes do protocolo no video: https://www.youtube.com/watch?v=WzspAsMc06s&)</p>
 <p>Link na PlayStore: https://play.google.com/store/apps/details?id=com.times</p>
 
 Algumas telas do app:
@@ -20,8 +20,6 @@ Algumas telas do app:
 
 ## Ferramentas
 [//]: # (Add the features of your project here:)
-This app features all the latest tools and practices in mobile development!
-
 - ⚛️ **React** — Uma biblioteca em JavaScript para desenvolvimento de interfaces
 - ⚛️ **React Native** — Uma lib que provê uma maneira de criar apps nativos IOS e Android utilizando React
 - 🕒 **Moment** — Biblioteca em Javascript pra lidar com tempo/datas.
